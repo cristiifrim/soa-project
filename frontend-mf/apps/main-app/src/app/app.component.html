@@ -1,0 +1,17 @@
+<ng-mf-top-bar [userConnected]="userConnected"></ng-mf-top-bar>
+
+<main class="main-content">
+  <div *ngIf="isLoggedIn$ | async; else signIn" class="main-inner">
+    <header class="welcome-section">
+      <h1 class="welcome-title">
+        Welcome, <span class="welcome-name">{{ userConnected?.email ?? '' }}</span>
+        <span class="welcome-underline"></span>
+      </h1>
+    </header>
+    <router-outlet (activate)="onOutletLoaded($event)"></router-outlet>
+  </div>
+
+  <ng-template #signIn>
+    <router-outlet (activate)="onOutletLoaded($event)"></router-outlet>
+  </ng-template>
+</main>

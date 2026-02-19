@@ -1,0 +1,33 @@
+:root {
+  --color-primary: #0d9488;
+  --color-primary-hover: #0f766e;
+  --color-primary-light: #ccfbf1;
+  --color-border: #e2e8f0;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-card: #ffffff;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input-field {
+  @apply w-full px-4 py-3 rounded-xl border bg-white text-slate-800 placeholder-slate-400 transition-colors;
+  border-color: var(--color-border);
+}
+.input-field:focus {
+  @apply outline-none ring-2 ring-teal-400/30;
+  border-color: var(--color-primary);
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center font-semibold rounded-xl px-5 py-3 text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-400;
+  background-color: var(--color-primary);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}

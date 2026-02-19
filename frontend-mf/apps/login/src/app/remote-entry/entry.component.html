@@ -1,0 +1,61 @@
+<div class="login-page">
+  <div class="login-card">
+    <div class="login-header">
+      <div class="login-logo">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-10 h-10">
+          <path d="M11.25 4.533A9.707 9.707 0 0 0 6 3a9.735 9.735 0 0 0-3.25.555.75.75 0 0 0-.5.707v14.25a.75.75 0 0 0 1 .707A8.237 8.237 0 0 1 6 18.75c1.995 0 3.823.707 5.25 1.886V4.533Z" />
+        </svg>
+      </div>
+      <h2 class="login-title">{{ isRegisterMode ? 'Create an account' : 'Welcome back' }}</h2>
+      <p class="login-subtitle">{{ isRegisterMode ? 'Sign up to start posting ads.' : 'Sign in to continue to Ad Tracker.' }}</p>
+    </div>
+
+    @if (errorMessage) {
+      <div class="login-error" role="alert">
+        {{ errorMessage }}
+      </div>
+    }
+
+    <form class="login-form" (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="email"
+          required
+          placeholder="you@example.com"
+          class="input-field"
+          [disabled]="loading"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          required
+          placeholder="••••••••"
+          class="input-field"
+          [disabled]="loading"
+        />
+      </div>
+      <button type="submit" class="btn-primary login-submit" [disabled]="loading">
+        {{ loading ? 'Please wait...' : (isRegisterMode ? 'Create account' : 'Sign in') }}
+      </button>
+    </form>
+
+    @if (isLoggedIn$ | async) {
+      <p class="login-success">You are logged in!</p>
+    }
+
+    <div class="login-toggle">
+      <button type="button" class="toggle-btn" (click)="toggleMode()">
+        {{ isRegisterMode ? 'Already have an account? Sign in' : "Don't have an account? Sign up" }}
+      </button>
+    </div>
+  </div>
+</div>

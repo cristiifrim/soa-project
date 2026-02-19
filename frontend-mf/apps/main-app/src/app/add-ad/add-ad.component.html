@@ -1,0 +1,77 @@
+<div class="add-ad-page">
+  <article class="add-ad-card card">
+    <header class="add-ad-header">
+      <h1 class="add-ad-title">
+        <span class="add-ad-title-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="12" height="12" style="max-width: 24px; max-height: 24px;">
+            <path d="M12 4v16m8-8H4" />
+          </svg>
+        </span>
+        Add a New Ad
+      </h1>
+      <p class="add-ad-subtitle">Fill in the details below to publish your ad.</p>
+    </header>
+
+    <form (ngSubmit)="addAd()" class="add-ad-body">
+      <section class="add-ad-section">
+        <app-form-field sectionTitle="Title">
+          <input
+            type="text"
+            id="title"
+            [(ngModel)]="title"
+            name="title"
+            required
+            placeholder="e.g. Tutoring in Mathematics"
+          />
+        </app-form-field>
+      </section>
+
+      <section class="add-ad-section">
+        <app-form-field sectionTitle="Description">
+          <textarea
+            id="description"
+            [(ngModel)]="description"
+            name="description"
+            required
+            rows="4"
+            placeholder="Describe your service or request..."
+          ></textarea>
+        </app-form-field>
+      </section>
+
+      <section class="add-ad-section">
+        <h3 class="add-ad-section-title">Category &amp; Location</h3>
+        <div class="add-ad-row">
+          <app-form-field label="Category">
+            <input
+              type="text"
+              id="category"
+              [(ngModel)]="category"
+              name="category"
+              required
+              placeholder="e.g. Education, Services"
+            />
+          </app-form-field>
+          <app-form-field label="Location">
+            <input
+              type="text"
+              id="location"
+              [(ngModel)]="location"
+              name="location"
+              placeholder="e.g. Paris, Remote"
+            />
+          </app-form-field>
+        </div>
+      </section>
+
+      <section class="add-ad-section add-ad-actions">
+        <button type="submit" class="add-ad-submit-btn">
+          <svg class="add-ad-submit-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+          </svg>
+          Publish Ad
+        </button>
+      </section>
+    </form>
+  </article>
+</div>

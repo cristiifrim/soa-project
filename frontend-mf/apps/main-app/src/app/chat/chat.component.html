@@ -1,0 +1,39 @@
+<div class="chat-ui">
+  <div class="chat-messages" #messagesContainer>
+    @if (!messages.length) {
+      <div class="chat-empty">
+        <p class="chat-empty-text">No messages yet. Start the conversation!</p>
+      </div>
+    }
+    @for (msg of messages; track msg.timestamp) {
+      <div class="message-wrapper" [class.message-own]="isMessageAuthor(msg)">
+        <div class="message-bubble">
+          <div class="message-header">
+            <span class="message-author">{{ msg.userEmail }}</span>
+            @if (isAdPoster(msg)) {
+              <span class="message-badge">Author</span>
+            }
+          </div>
+          <p class="message-text">{{ msg.message }}</p>
+          <span class="message-time">{{ msg.timestamp | date: 'shortTime' }}</span>
+        </div>
+      </div>
+    }
+  </div>
+
+  <div class="chat-input-wrap">
+    <input
+      type="text"
+      [(ngModel)]="newMessage"
+      placeholder="Type a message..."
+      (keyup.enter)="sendMessage()"
+      class="input-field chat-input"
+    />
+    <button type="button" class="btn btn-primary chat-send" (click)="sendMessage()">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+      </svg>
+      Send
+    </button>
+  </div>
+</div>

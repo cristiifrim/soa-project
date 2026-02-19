@@ -1,0 +1,25 @@
+<article (click)="onViewAd()" class="ad-card card card-hover">
+  <div class="ad-card-body">
+    <div class="ad-card-header">
+      <h2 class="ad-card-title">{{ ad.title }}</h2>
+      <span class="ad-card-category">{{ ad.category }}</span>
+    </div>
+    <p class="ad-card-description">{{ ad.description }}</p>
+    <div class="ad-card-meta">
+      <span class="ad-meta-location">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        {{ ad.location || 'Not specified' }}
+      </span>
+      <span class="ad-meta-date">Posted {{ ad.created_at | date: 'mediumDate' }}</span>
+    </div>
+    <div class="ad-card-footer">
+      <span class="view-link">View details</span>
+      <svg class="view-details-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </div>
+  </div>
+</article>

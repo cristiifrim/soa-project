@@ -1,0 +1,9 @@
+<div class="form-field">
+  @if (sectionTitle) {
+    <h3 class="form-field-section-title">{{ sectionTitle }}</h3>
+  }
+  @if (label) {
+    <label class="form-field-label">{{ label }}</label>
+  }
+  <ng-content></ng-content>
+</div>

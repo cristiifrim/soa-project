@@ -1,0 +1,29 @@
+<div class="notifications-panel">
+  <div class="notifications-header">
+    <h3 class="notifications-title">Notifications</h3>
+  </div>
+  <div class="notifications-list">
+    @if (!notifications.length) {
+      <div class="notifications-empty">
+        <svg class="w-10 h-10 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14V11a6 6 0 00-4-5.659V4a2 2 0 10-4 0v1.341C7 7 6 8 6 11v3c0 .386-.146.735-.405 1.005L4 17h5m6 0v1a3 3 0 01-6 0v-1m6 0H9" />
+        </svg>
+        <p>No new notifications</p>
+      </div>
+    }
+    @for (notification of notifications; track notification.title + notification.createdAt) {
+      <div class="notification-item">
+        <div class="notification-icon">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+          </svg>
+        </div>
+        <div class="notification-content">
+          <p class="notification-label">New ad</p>
+          <strong class="notification-title">{{ notification.title }}</strong>
+          <p class="notification-time">{{ notification.createdAt | date: 'short' }}</p>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,39 @@
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 48px;
+  min-height: calc(100vh - 70px);
+}
+
+.main-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.welcome-section {
+  margin-bottom: 8px;
+}
+
+.welcome-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+
+.welcome-name {
+  color: var(--color-primary);
+}
+
+.welcome-underline {
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 48px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: 2px;
+}

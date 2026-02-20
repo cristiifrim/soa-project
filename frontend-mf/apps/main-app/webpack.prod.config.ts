@@ -6,19 +6,30 @@ import config from './module-federation.config';
  * The DTS Plugin can be enabled by setting dts: true
  * Learn more about the DTS Plugin here: https://module-federation.io/configure/dts.html
  */
-export default withModuleFederation(
-  {
-    ...config,
-    /*
-     * Remote overrides for production.
-     * Each entry is a pair of a unique name and the URL where it is deployed.
-     *
-     * e.g.
-     * remotes: [
-     *   ['app1', 'https://app1.example.com'],
-     *   ['app2', 'https://app2.example.com'],
-     * ]
-     */
-  },
-  { dts: false }
-);
+export default async (env?: NodeJS.ProcessEnv, argv?: Record<string, string>) => {
+  const mfExecutor = await withModuleFederation(
+    {
+      ...config,
+      /*
+       * Remote overrides for production.
+       * Each entry is a pair of a unique name and the URL where it is deployed.
+       *
+       * e.g.
+       * remotes: [
+       *   ['app1', 'https://app1.example.com'],
+       *   ['app2', 'https://app2.example.com'],
+       * ]
+       */
+    },
+    { dts: false }
+  );
+  const mfConfig = await mfExecutor(env, argv);
+  return {
+    ...mfConfig,
+    externalsType: 'window',
+    externals: {
+      ...(mfConfig.externals as Record<string, string> ?? {}),
+      '@microsoft/signalr': 'signalR',
+    },
+  };
+};

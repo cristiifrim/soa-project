@@ -19,14 +19,13 @@ export class TopBarComponent {
   @Input() userConnected?: User | null;
 
   showNotifications: boolean = false;
-  notifications: any[] = [];
+  unreadCount = 0;
 
   constructor(private notificationService: NotificationService) {}
 
   ngOnInit() {
-    this.notificationService.listenForNotifications().subscribe((notification) => {
-      this.notifications.push(notification);
-      console.log("Notification reçue :", notification);
+    this.notificationService.getUnreadCount().subscribe((count) => {
+      this.unreadCount = count;
     });
   }
 
@@ -41,6 +40,9 @@ export class TopBarComponent {
 
   toggleNotifications() {
     this.showNotifications = !this.showNotifications;
+    if (this.showNotifications) {
+      this.notificationService.markAsRead();
+    }
   }
 
 }

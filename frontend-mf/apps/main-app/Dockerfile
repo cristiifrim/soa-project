@@ -5,9 +5,12 @@ WORKDIR /app
 
 COPY package.json package-lock.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY . .
+
+# Clear Nx cache before serving
+RUN npx nx reset || true
 
 EXPOSE 4200
 

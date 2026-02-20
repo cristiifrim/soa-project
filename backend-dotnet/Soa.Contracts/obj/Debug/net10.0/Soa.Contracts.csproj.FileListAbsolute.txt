@@ -1,0 +1,12 @@
+D:\soa-project\backend-dotnet\Soa.Contracts\bin\Debug\net10.0\Soa.Contracts.deps.json
+D:\soa-project\backend-dotnet\Soa.Contracts\bin\Debug\net10.0\Soa.Contracts.dll
+D:\soa-project\backend-dotnet\Soa.Contracts\bin\Debug\net10.0\Soa.Contracts.pdb
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\Soa.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\Soa.Contracts.AssemblyInfoInputs.cache
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\Soa.Contracts.AssemblyInfo.cs
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\Soa.Contracts.csproj.CoreCompileInputs.cache
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\Soa.Contracts.sourcelink.json
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\Soa.Contracts.dll
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\refint\Soa.Contracts.dll
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\Soa.Contracts.pdb
+D:\soa-project\backend-dotnet\Soa.Contracts\obj\Debug\net10.0\ref\Soa.Contracts.dll

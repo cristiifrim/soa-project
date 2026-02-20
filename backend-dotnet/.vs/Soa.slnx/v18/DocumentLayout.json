@@ -1,0 +1,483 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\soa-project\\backend-dotnet\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|d:\\soa-project\\backend-dotnet\\soa.gateway\\services\\rabbitmqconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|solutionrelative:soa.gateway\\services\\rabbitmqconsumerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|d:\\soa-project\\backend-dotnet\\soa.chatservice\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|solutionrelative:soa.chatservice\\services\\rabbitmqpublisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|d:\\soa-project\\backend-dotnet\\soa.userservice\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|solutionrelative:soa.userservice\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|d:\\soa-project\\backend-dotnet\\soa.userservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|solutionrelative:soa.userservice\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|d:\\soa-project\\backend-dotnet\\soa.contracts\\dtos\\authlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|solutionrelative:soa.contracts\\dtos\\authlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|d:\\soa-project\\backend-dotnet\\soa.adsservice\\models\\addocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|solutionrelative:soa.adsservice\\models\\addocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|d:\\soa-project\\backend-dotnet\\soa.adsservice\\controllers\\adscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|solutionrelative:soa.adsservice\\controllers\\adscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|d:\\soa-project\\backend-dotnet\\soa.gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|solutionrelative:soa.gateway\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|d:\\soa-project\\backend-dotnet\\soa.userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|solutionrelative:soa.userservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|d:\\soa-project\\backend-dotnet\\soa.gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|solutionrelative:soa.gateway\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|d:\\soa-project\\backend-dotnet\\soa.chatservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|solutionrelative:soa.chatservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|d:\\soa-project\\backend-dotnet\\soa.adsservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|solutionrelative:soa.adsservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|d:\\soa-project\\backend-dotnet\\soa.chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|solutionrelative:soa.chatservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|d:\\soa-project\\backend-dotnet\\soa.gateway\\hubs\\notificationshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|solutionrelative:soa.gateway\\hubs\\notificationshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|d:\\soa-project\\backend-dotnet\\soa.gateway\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|solutionrelative:soa.gateway\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|d:\\soa-project\\backend-dotnet\\soa.chatservice\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|solutionrelative:soa.chatservice\\services\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|d:\\soa-project\\backend-dotnet\\soa.chatservice\\models\\chatmessagedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|solutionrelative:soa.chatservice\\models\\chatmessagedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|d:\\soa-project\\backend-dotnet\\soa.chatservice\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|solutionrelative:soa.chatservice\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|d:\\soa-project\\backend-dotnet\\soa.chatservice\\soa.chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B199438B-D1A3-C968-81D4-DB260FD432E4}|Soa.ChatService\\Soa.ChatService.csproj|solutionrelative:soa.chatservice\\soa.chatservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|d:\\soa-project\\backend-dotnet\\soa.adsservice\\services\\kafkaproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|solutionrelative:soa.adsservice\\services\\kafkaproducerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|d:\\soa-project\\backend-dotnet\\soa.adsservice\\services\\adsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E04448CE-BC06-C4AC-9D83-DBECB29BB890}|Soa.AdsService\\Soa.AdsService.csproj|solutionrelative:soa.adsservice\\services\\adsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|d:\\soa-project\\backend-dotnet\\soa.gateway\\soa.gateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4F2A10A0-9FCE-810B-BA75-E117D3DC7E62}|Soa.Gateway\\Soa.Gateway.csproj|solutionrelative:soa.gateway\\soa.gateway.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|d:\\soa-project\\backend-dotnet\\soa.contracts\\soa.contracts.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|solutionrelative:soa.contracts\\soa.contracts.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|d:\\soa-project\\backend-dotnet\\soa.userservice\\models\\userdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|solutionrelative:soa.userservice\\models\\userdocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|d:\\soa-project\\backend-dotnet\\soa.userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|solutionrelative:soa.userservice\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|d:\\soa-project\\backend-dotnet\\soa.userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{278C58D5-5FE6-A61D-5333-FDA9FA96B929}|Soa.UserService\\Soa.UserService.csproj|solutionrelative:soa.userservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|d:\\soa-project\\backend-dotnet\\soa.contracts\\dtos\\createaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|solutionrelative:soa.contracts\\dtos\\createaddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|d:\\soa-project\\backend-dotnet\\soa.contracts\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{460653BB-6CFF-CA30-786B-AEE6A7EA2E34}|Soa.Contracts\\Soa.Contracts.csproj|solutionrelative:soa.contracts\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Program.cs",
+              "RelativeDocumentMoniker": "Soa.AdsService\\Program.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Program.cs",
+              "RelativeToolTip": "Soa.AdsService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:08:07.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Program.cs",
+              "RelativeDocumentMoniker": "Soa.Gateway\\Program.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Program.cs",
+              "RelativeToolTip": "Soa.Gateway\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:58:39.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AdsController.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Controllers\\AdsController.cs",
+              "RelativeDocumentMoniker": "Soa.AdsService\\Controllers\\AdsController.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Controllers\\AdsController.cs",
+              "RelativeToolTip": "Soa.AdsService\\Controllers\\AdsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwA4AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:00:33.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdDocument.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Models\\AdDocument.cs",
+              "RelativeDocumentMoniker": "Soa.AdsService\\Models\\AdDocument.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Models\\AdDocument.cs",
+              "RelativeToolTip": "Soa.AdsService\\Models\\AdDocument.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:04:30.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthLoginDto.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Dtos\\AuthLoginDto.cs",
+              "RelativeDocumentMoniker": "Soa.Contracts\\Dtos\\AuthLoginDto.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Dtos\\AuthLoginDto.cs",
+              "RelativeToolTip": "Soa.Contracts\\Dtos\\AuthLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:05:40.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Soa.UserService\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Soa.UserService\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA5wBEAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:56:29.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "Soa.UserService\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "Soa.UserService\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAwwA4AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:57:59.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RabbitMqPublisher.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Services\\RabbitMqPublisher.cs",
+              "RelativeDocumentMoniker": "Soa.ChatService\\Services\\RabbitMqPublisher.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Services\\RabbitMqPublisher.cs",
+              "RelativeToolTip": "Soa.ChatService\\Services\\RabbitMqPublisher.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:59:39.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RabbitMqConsumerService.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Services\\RabbitMqConsumerService.cs",
+              "RelativeDocumentMoniker": "Soa.Gateway\\Services\\RabbitMqConsumerService.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Services\\RabbitMqConsumerService.cs",
+              "RelativeToolTip": "Soa.Gateway\\Services\\RabbitMqConsumerService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowA0AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:07:40.58Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\appsettings.json",
+              "RelativeDocumentMoniker": "Soa.ChatService\\appsettings.json",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\appsettings.json",
+              "RelativeToolTip": "Soa.ChatService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-20T09:14:31.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\appsettings.json",
+              "RelativeDocumentMoniker": "Soa.Gateway\\appsettings.json",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\appsettings.json",
+              "RelativeToolTip": "Soa.Gateway\\appsettings.json",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-20T09:14:47.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\appsettings.json",
+              "RelativeDocumentMoniker": "Soa.UserService\\appsettings.json",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\appsettings.json",
+              "RelativeToolTip": "Soa.UserService\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-20T09:14:58.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NotificationsHub.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Hubs\\NotificationsHub.cs",
+              "RelativeDocumentMoniker": "Soa.Gateway\\Hubs\\NotificationsHub.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Hubs\\NotificationsHub.cs",
+              "RelativeToolTip": "Soa.Gateway\\Hubs\\NotificationsHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:07:29.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ChatMessageDocument.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Models\\ChatMessageDocument.cs",
+              "RelativeDocumentMoniker": "Soa.ChatService\\Models\\ChatMessageDocument.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Models\\ChatMessageDocument.cs",
+              "RelativeToolTip": "Soa.ChatService\\Models\\ChatMessageDocument.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:05:50.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Soa.ChatService.csproj",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Soa.ChatService.csproj",
+              "RelativeDocumentMoniker": "Soa.ChatService\\Soa.ChatService.csproj",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Soa.ChatService.csproj",
+              "RelativeToolTip": "Soa.ChatService\\Soa.ChatService.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-20T09:03:21.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Program.cs",
+              "RelativeDocumentMoniker": "Soa.ChatService\\Program.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Program.cs",
+              "RelativeToolTip": "Soa.ChatService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:59:22.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "KafkaProducerService.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Services\\KafkaProducerService.cs",
+              "RelativeDocumentMoniker": "Soa.AdsService\\Services\\KafkaProducerService.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Services\\KafkaProducerService.cs",
+              "RelativeToolTip": "Soa.AdsService\\Services\\KafkaProducerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:01:31.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Services\\ChatService.cs",
+              "RelativeDocumentMoniker": "Soa.ChatService\\Services\\ChatService.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Services\\ChatService.cs",
+              "RelativeToolTip": "Soa.ChatService\\Services\\ChatService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:59:28.7Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "Soa.Gateway\\Hubs\\ChatHub.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "Soa.Gateway\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:59:00.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdsService.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Services\\AdsService.cs",
+              "RelativeDocumentMoniker": "Soa.AdsService\\Services\\AdsService.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.AdsService\\Services\\AdsService.cs",
+              "RelativeToolTip": "Soa.AdsService\\Services\\AdsService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T09:00:52.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Soa.Gateway.csproj",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Soa.Gateway.csproj",
+              "RelativeDocumentMoniker": "Soa.Gateway\\Soa.Gateway.csproj",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Soa.Gateway.csproj",
+              "RelativeToolTip": "Soa.Gateway\\Soa.Gateway.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-20T09:03:25.639Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Soa.ChatService\\Controllers\\ChatController.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.ChatService\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Soa.ChatService\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:59:49.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Soa.Contracts.csproj",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Soa.Contracts.csproj",
+              "RelativeDocumentMoniker": "Soa.Contracts\\Soa.Contracts.csproj",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Soa.Contracts.csproj",
+              "RelativeToolTip": "Soa.Contracts\\Soa.Contracts.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-20T09:03:23.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserDocument.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Models\\UserDocument.cs",
+              "RelativeDocumentMoniker": "Soa.UserService\\Models\\UserDocument.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Models\\UserDocument.cs",
+              "RelativeToolTip": "Soa.UserService\\Models\\UserDocument.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:58:34.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Soa.UserService\\Services\\UserService.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Services\\UserService.cs",
+              "RelativeToolTip": "Soa.UserService\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:56:48.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Program.cs",
+              "RelativeDocumentMoniker": "Soa.UserService\\Program.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.UserService\\Program.cs",
+              "RelativeToolTip": "Soa.UserService\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:56:09.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreateAdDto.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Dtos\\CreateAdDto.cs",
+              "RelativeDocumentMoniker": "Soa.Contracts\\Dtos\\CreateAdDto.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Dtos\\CreateAdDto.cs",
+              "RelativeToolTip": "Soa.Contracts\\Dtos\\CreateAdDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:56:01.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "Soa.Contracts\\Settings\\JwtSettings.cs",
+              "ToolTip": "D:\\soa-project\\backend-dotnet\\Soa.Contracts\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "Soa.Contracts\\Settings\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-20T08:55:45.13Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

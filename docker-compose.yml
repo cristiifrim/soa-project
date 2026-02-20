@@ -1,26 +1,58 @@
 version: '3.8'
 
 services:
-  backend:
+  gateway:
     build:
-      context: ./backend
-    container_name: nestjs-backend
+      context: ./backend-dotnet
+      dockerfile: Soa.Gateway/Dockerfile
+    container_name: dotnet-gateway
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=production
-      - MONGO_URI=mongodb://mongodb:27017/your-database
+    depends_on:
+      user-service:
+        condition: service_started
+      ads-service:
+        condition: service_started
+      chat-service:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+      kafka:
+        condition: service_healthy
+    networks:
+      - app-network
+
+  user-service:
+    build:
+      context: ./backend-dotnet
+      dockerfile: Soa.UserService/Dockerfile
+    container_name: dotnet-user-service
+    depends_on:
+      - mongodb
+    networks:
+      - app-network
+
+  ads-service:
+    build:
+      context: ./backend-dotnet
+      dockerfile: Soa.AdsService/Dockerfile
+    container_name: dotnet-ads-service
     depends_on:
       - mongodb
       - kafka
-      - zookeeper
     networks:
       - app-network
-    develop:
-      watch:
-      - action: sync
-        path: .
-        target: ./backend
+
+  chat-service:
+    build:
+      context: ./backend-dotnet
+      dockerfile: Soa.ChatService/Dockerfile
+    container_name: dotnet-chat-service
+    depends_on:
+      - mongodb
+      - rabbitmq
+    networks:
+      - app-network
 
   main-app:
     build:
@@ -30,7 +62,7 @@ services:
     ports:
       - "4200:4200"
     depends_on:
-      - backend
+      - gateway
       - login
       - dashboard
     restart: always
@@ -105,12 +137,17 @@ services:
     image: rabbitmq:management
     container_name: rabbitmq
     ports:
-      - "5672:5672" 
-      - "15672:15672" 
+      - "5672:5672"
+      - "15672:15672"
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: guest
-
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "-q", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
     networks:
       - app-network
 
@@ -127,6 +164,12 @@ services:
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     depends_on:
       - zookeeper
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --list --bootstrap-server localhost:9093 2>/dev/null || exit 1"]
+      interval: 5s
+      timeout: 10s
+      retries: 15
+      start_period: 45s
     networks:
       - app-network
 

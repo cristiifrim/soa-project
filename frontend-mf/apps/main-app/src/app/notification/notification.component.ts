@@ -14,12 +14,8 @@ export class NotificationsComponent implements OnInit {
   constructor(private notificationService: NotificationService) {}
 
   ngOnInit() {
-    this.notificationService.listenForNotifications().subscribe((notification) => {
-      this.notifications.push(notification);
-      console.log("Notification reçue :", notification);
+    this.notificationService.notifications$.subscribe((list) => {
+      this.notifications = list;
     });
-
-    console.log("Notifications :", this.notifications);
-    
   }
 }

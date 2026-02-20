@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Soa.AdsService/Soa.AdsService.csproj" />
+  <Project Path="Soa.ChatService/Soa.ChatService.csproj" />
+  <Project Path="Soa.Contracts/Soa.Contracts.csproj" />
+  <Project Path="Soa.Gateway/Soa.Gateway.csproj" />
+  <Project Path="Soa.UserService/Soa.UserService.csproj" />
+</Solution>

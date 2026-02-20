@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "xoavpwe9sBY=",
+  "success": true,
+  "projectFilePath": "D:\\soa-project\\backend-dotnet\\Soa.Gateway\\Soa.Gateway.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Cristi Ifrim\\.nuget\\packages\\confluent.kafka\\2.13.1\\confluent.kafka.2.13.1.nupkg.sha512",
+    "C:\\Users\\Cristi Ifrim\\.nuget\\packages\\librdkafka.redist\\2.13.0\\librdkafka.redist.2.13.0.nupkg.sha512",
+    "C:\\Users\\Cristi Ifrim\\.nuget\\packages\\rabbitmq.client\\7.2.0\\rabbitmq.client.7.2.0.nupkg.sha512",
+    "C:\\Users\\Cristi Ifrim\\.nuget\\packages\\system.io.hashing\\8.0.0\\system.io.hashing.8.0.0.nupkg.sha512",
+    "C:\\Users\\Cristi Ifrim\\.nuget\\packages\\yarp.reverseproxy\\2.3.0\\yarp.reverseproxy.2.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

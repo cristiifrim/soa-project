@@ -1,52 +1,50 @@
 # Ad Tracker
 
-Ad Tracker is a classified ads platform. The frontend uses a microfrontend setup with Angular and Nx (Module Federation). The backend is NestJS with JWT auth, Kafka for notifications, and RabbitMQ for chat.
+Ad Tracker is a classified ads platform. The frontend uses a microfrontend setup with Angular and Nx (Module Federation). The backend is .NET: an API gateway with reverse proxy, JWT auth, SignalR hubs for chat and notifications, and microservices using MongoDB, Kafka, and RabbitMQ.
 
 ## Frontend
 
 - **Microfrontends (Angular + Nx)**
   - Main app: **http://localhost:4200**
-  - Login app: **http://localhost:4201**
+  - Login: **http://localhost:4201**
+  - Dashboard: **http://localhost:4202**
 
-Remote apps are declared in `module.federation.manifest.json` inside the main-app. Example:
+Remotes are declared in `frontend-mf/apps/main-app/public/module-federation.manifest.json`. The main app loads these remotes at runtime.
 
-```json
-{
-  "login": "http://localhost:4201/"
-}
-```
+- **SignalR** (loaded from CDN) is used for real-time chat and notifications; the gateway exposes hubs at `/hubs/chat` and `/hubs/notifications`.
 
-The main app loads and uses these remotes; the same pattern applies for other remotes (e.g. dashboard).
+## Backend (.NET)
 
-## Backend
+- **Soa.Gateway** (port 3000) – Reverse proxy to microservices, SignalR hubs (chat, notifications), CORS.
+- **Soa.UserService** – Users and JWT authentication.
+- **Soa.AdsService** – Ads; publishes events to Kafka.
+- **Soa.ChatService** – Chat messages; uses RabbitMQ.
 
-- **REST API with JWT authentication**
+All .NET services live under `backend-dotnet/`. The gateway is the single entry point for the frontend (API and SignalR).
 
-Protected routes use the JWT guard, for example:
+## Infrastructure
 
-```typescript
-@UseGuards(AuthGuard('jwt'))
-@Get('all')
-findAll() {
-  return this.adsService.findAll();
-}
-```
+- **MongoDB** – Data store for users, ads, and chat (e.g. port 27017).
+- **Kafka** (+ Zookeeper) – Event streaming (e.g. new ad notifications).
+- **RabbitMQ** – Message broker for chat (ports 5672, 15672 for management UI).
 
-## Microservices
-
-- **Kafka** – streaming events (e.g. when a new ad is posted) for notifications.
-- **RabbitMQ** – message broker for ad chat.
-
-Brokers are configured for Docker (e.g. `kafka:9093`, `rabbitmq:5672`). See the backend and `docker-compose.yml` for connection options.
+Connection details and hosts (e.g. `kafka:9093`, `rabbitmq:5672`) are in `docker-compose.yml` and each service’s configuration.
 
 ## Docker
 
-All services (backend, main-app, login, dashboard, MongoDB, Kafka, RabbitMQ, etc.) are defined in `docker-compose.yml`.
+All services are defined in `docker-compose.yml`: gateway, user-service, ads-service, chat-service, main-app, login, dashboard, MongoDB, RabbitMQ, Kafka, Zookeeper.
 
 **Start everything:**
 
-```shell
+```bash
 docker-compose up -d
 ```
 
-Then open the main app at http://localhost:4200.
+Then open the main app at **http://localhost:4200**.
+
+**Rebuild after code changes (e.g. frontend):**
+
+```bash
+docker-compose build --no-cache main-app login dashboard
+docker-compose up -d main-app login dashboard
+```

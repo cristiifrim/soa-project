@@ -47,7 +47,7 @@ export class ChatComponent implements OnInit {
         );
     }
 
-    ngOnInit() {
+    async ngOnInit() {
         console.log('User connected:', this.userConnected);
 
         this.adService.getAdById(this.adId).subscribe((ad) => {
@@ -58,9 +58,22 @@ export class ChatComponent implements OnInit {
             this.messages = messages;
         });
 
-        this.chatService.joinChat(this.adId);
-        this.chatService.getMessages().subscribe((message) => {
-            this.messages.push(message);
+        // Wait for connection and join chat before subscribing to messages
+        await this.chatService.joinChat(this.adId);
+        console.log('Joined chat for adId:', this.adId);
+        
+        this.chatService.getMessages().subscribe({
+            next: (message) => {
+                console.log('ChatComponent received message:', message);
+                if (message.timestamp == null) {
+                  message = { ...message, timestamp: new Date() };
+                }
+                this.messages.push(message);
+                console.log('Total messages now:', this.messages.length);
+            },
+            error: (err) => {
+                console.error('Error in getMessages subscription:', err);
+            }
         });
     }
 
